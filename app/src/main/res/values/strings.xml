@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CrackIt</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro">Guess the safe pin lock as quickly as possible\n\nTap anywhere to start</string>
+    <string name="title_activity_help_screen">HelpScreen</string>
+
+    <string name="help">Try to unlock the safe as quickly as possible\nAfter each guess you will get a hint about whether your guess was high or low</string>
+    <string name="credits">Music: http://www.purple-planet.com</string>
+</resources>

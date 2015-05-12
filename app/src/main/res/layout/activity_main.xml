@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/background"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/highLowTextSwitcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        />
+
+    <TextSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attemptsTextSwitcher"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess"
+        android:id="@+id/guessButton"
+        android:textSize="50dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Base.Theme.AppCompat.Light"
+        android:textColor="#ffbebebe"
+        android:background="#ff2e2e2e" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker1"
+        android:soundEffectsEnabled="true"
+        android:layout_above="@+id/guessButton"
+        android:layout_alignParentLeft="true"
+        android:theme="@style/Base.Theme.AppCompat.Light" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker2"
+        android:soundEffectsEnabled="true"
+        android:layout_above="@+id/guessButton"
+        android:layout_toRightOf="@+id/numberPicker1"
+        android:theme="@style/Base.Theme.AppCompat.Light" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker3"
+        android:soundEffectsEnabled="true"
+        android:layout_above="@+id/guessButton"
+        android:layout_toRightOf="@+id/numberPicker2"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/handle"
+        android:src="@drawable/handle"
+        android:layout_above="@+id/guessButton"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@+id/numberPicker3"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/intro"
+        android:background="#9b000000"
+        android:id="@+id/intro"
+        android:clickable="true"
+        android:textColor="#ffff0027"
+        android:textSize="45dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="New Text"
+        android:id="@+id/outro"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#ffff0800"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN"
+        android:id="@+id/playAgain"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_above="@+id/guessButton"
+        android:textColor="#fffcff00"
+        android:textSize="40dp"
+        android:clickable="true"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:textSize="40dp"
+        android:textColor="#fffff900"
+        android:clickable="true" />
+
+</RelativeLayout>
